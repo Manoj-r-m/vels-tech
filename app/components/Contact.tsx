@@ -21,8 +21,8 @@ export default function Contact() {
 
     return (
         <footer id="contact" className="bg-bg-dark text-white pt-16 pb-8 overflow-hidden relative">
-            <div className="max-w-6xl mx-auto px-6">
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            <div className="max-w-6xl mx-auto px-6 z-10 relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-10 md:mb-12">
                     <div className="col-span-1 lg:col-span-1">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="bg-primary p-1.5 rounded-lg text-white">
@@ -82,9 +82,9 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs">
+                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-center md:text-left text-xs">
                     <p>© {currentYear} Vel's Tech Learning Hub. All rights reserved.</p>
-                    <div className="flex gap-6">
+                    <div className="flex gap-6 justify-center md:justify-end w-full md:w-auto">
                         <span className="hover:text-white transition-colors cursor-pointer">Security</span>
                         <span className="hover:text-white transition-colors cursor-pointer">Status</span>
                     </div>
@@ -92,7 +92,7 @@ export default function Contact() {
             </div>
 
             {/* Decorative Blur */}
-            <div className="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-[80%] h-[40%] bg-primary/20 rounded-full blur-[120px] -z-0" />
+            <div className="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-[80%] h-[40%] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
         </footer>
     );
 }

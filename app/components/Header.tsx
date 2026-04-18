@@ -75,13 +75,13 @@ export default function Header() {
 
             {/* Mobile Nav */}
             {isOpen && (
-                <div className="md:hidden absolute top-full left-0 right-0 bg-[#0b1120] animate-fade-in shadow-2xl border-b border-gray-800 z-50">
-                    <nav className="flex flex-col p-8 gap-6">
+                <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-[#0b1120] animate-fade-in shadow-2xl border-b border-gray-100 dark:border-gray-800 z-50 max-h-[80vh] overflow-y-auto">
+                    <nav className="flex flex-col p-6 gap-4">
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-xl font-bold text-slate-800 dark:text-white py-2 border-b border-gray-100 dark:border-gray-800"
+                                className="text-lg font-bold text-slate-800 dark:text-white py-3 border-b border-gray-100 dark:border-gray-800/50 hover:text-primary dark:hover:text-primary transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
@@ -89,7 +89,7 @@ export default function Header() {
                         ))}
                         <a
                             href="#register"
-                            className="bg-primary text-white px-6 py-4 rounded-2xl font-bold text-center mt-4 text-lg shadow-lg"
+                            className="bg-primary text-white px-6 py-4 rounded-xl font-bold text-center mt-2 text-lg shadow-lg hover:bg-primary-dark transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
                             Enroll Now

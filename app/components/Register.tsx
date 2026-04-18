@@ -3,13 +3,13 @@ import { Send, Rocket, Users, ArrowRight } from 'lucide-react';
 
 export default function Register() {
     return (
-        <section id="register" className="py-20 relative overflow-hidden">
+        <section id="register" className="py-12 md:py-24 relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 left-0 w-full h-full bg-primary/5 -z-10" />
 
-            <div className="max-w-6xl mx-auto px-6">
-                <div className="bg-white/80 dark:bg-card-dark/80 backdrop-blur-md p-10 md:p-14 rounded-3xl shadow-xl relative border border-gray-100 dark:border-gray-800">
-                    <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                <div className="bg-white/80 dark:bg-card-dark/80 backdrop-blur-md p-6 sm:p-10 md:p-14 rounded-3xl shadow-xl relative border border-gray-100 dark:border-gray-800">
+                    <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
                         <div>
                             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Join Our Community</span>
                             <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
@@ -35,10 +35,10 @@ export default function Register() {
                             </div>
                         </div>
 
-                        <div className="bg-[#0f172a] rounded-2xl p-8 md:p-10 shadow-2xl border border-white/10 relative overflow-hidden group">
-                            <div className="mb-8 relative z-10 text-center md:text-left">
-                                <h3 className="text-2xl font-black text-white mb-2">Student Enrollment</h3>
-                                <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">Limited spots available</p>
+                        <div className="bg-[#0f172a] rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl border border-white/10 relative overflow-hidden group w-full">
+                            <div className="mb-6 md:mb-8 relative z-10 text-center md:text-left">
+                                <h3 className="text-xl md:text-2xl font-black text-white mb-2">Student Enrollment</h3>
+                                <p className="text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">Limited spots available</p>
                             </div>
 
                             <form className="space-y-5 relative z-10">

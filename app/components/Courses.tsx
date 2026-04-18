@@ -24,9 +24,9 @@ const syllabusModules = [
 
 export default function Courses() {
     return (
-    <section id="courses" className="py-16 bg-gray-50 dark:bg-bg-dark">
+    <section id="courses" className="py-12 md:py-20 bg-gray-50 dark:bg-bg-dark">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center justify-center gap-2 mb-4">
             <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-primary/20">Flagship Program</span>
           </div>
@@ -39,27 +39,27 @@ export default function Courses() {
         </div>
 
         {/* Overview Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-            <div className="bg-white dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-12 md:mb-16">
+            <div className="bg-white dark:bg-card-dark p-4 md:p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
                 <span className="text-3xl font-black text-slate-900 dark:text-white block mb-1">18</span>
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Modules</span>
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500">Modules</span>
             </div>
-            <div className="bg-white dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
+            <div className="bg-white dark:bg-card-dark p-4 md:p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
                 <span className="text-3xl font-black text-slate-900 dark:text-white block mb-1">85+</span>
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Core Topics</span>
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500">Core Topics</span>
             </div>
-            <div className="bg-white dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
-                <Server className="w-8 h-8 text-primary mx-auto mb-2" />
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-500">On-Prem Focus</span>
+            <div className="bg-white dark:bg-card-dark p-4 md:p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
+                <Server className="w-6 h-6 md:w-8 md:h-8 text-primary mx-auto mb-2" />
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500">On-Prem Focus</span>
             </div>
-            <div className="bg-white dark:bg-card-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
-                <Cloud className="w-8 h-8 text-primary mx-auto mb-2" />
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Azure Mastery</span>
+            <div className="bg-white dark:bg-card-dark p-4 md:p-6 rounded-2xl border border-gray-100 dark:border-gray-800 text-center shadow-sm">
+                <Cloud className="w-6 h-6 md:w-8 md:h-8 text-primary mx-auto mb-2" />
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500">Azure Mastery</span>
             </div>
         </div>
 
         {/* Syllabus Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {syllabusModules.map((item, idx) => (
             <div key={idx} className="bg-white dark:bg-card-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4 border-b border-gray-50 dark:border-gray-800 pb-4">
@@ -85,9 +85,9 @@ export default function Courses() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <a href="#register" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-xl font-bold shadow-lg shadow-primary/25 hover:shadow-xl transition-all text-sm uppercase tracking-widest hover-lift">
-            Enroll in this Masterclass <ArrowRight className="w-4 h-4" />
+        <div className="mt-12 md:mt-16 text-center w-full px-0 sm:px-4">
+          <a href="#register" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-primary/25 hover:shadow-xl transition-all text-xs sm:text-sm uppercase tracking-widest hover-lift">
+            Enroll in this Masterclass <ArrowRight className="w-4 h-4 ml-1" />
           </a>
         </div>
       </div>

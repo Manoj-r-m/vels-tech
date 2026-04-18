@@ -13,9 +13,9 @@ export default function About() {
     ];
 
     return (
-    <section id="about" className="py-16 bg-white dark:bg-card-dark/50">
+    <section id="about" className="py-12 md:py-20 bg-white dark:bg-card-dark/50">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative order-2 md:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800">
               <Image 
@@ -49,7 +49,7 @@ export default function About() {
               ))}
             </div>
 
-            <button className="bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider transition-all shadow-md">
+            <button className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-lg font-bold text-sm uppercase tracking-wider transition-all shadow-md">
               Discover Our Story
             </button>
           </div>
