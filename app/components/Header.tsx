@@ -31,11 +31,11 @@ export default function Header() {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <div className="flex items-center gap-3 group cursor-pointer">
                     <div className="bg-slate-900 dark:bg-primary/20 p-1.5 rounded-xl shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform duration-300 border border-slate-800 dark:border-primary/30 flex items-center justify-center w-12 h-12 overflow-hidden">
-                        <Image 
-                            src="/vel-logo.png" 
-                            alt="Vel's Tech Logo" 
-                            width={40} 
-                            height={40} 
+                        <Image
+                            src="/vel-logo.png"
+                            alt="Vel's Tech Logo"
+                            width={40}
+                            height={40}
                             className="object-contain w-full h-full"
                             priority
                         />
@@ -75,7 +75,7 @@ export default function Header() {
 
             {/* Mobile Nav */}
             {isOpen && (
-                <div className="md:hidden absolute top-full left-0 right-0 glass animate-fade-in shadow-2xl border-b border-gray-100 dark:border-gray-800">
+                <div className="md:hidden absolute top-full left-0 right-0 bg-[#0b1120] animate-fade-in shadow-2xl border-b border-gray-800 z-50">
                     <nav className="flex flex-col p-8 gap-6">
                         {navLinks.map((link) => (
                             <a
