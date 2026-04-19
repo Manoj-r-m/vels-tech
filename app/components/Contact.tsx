@@ -68,14 +68,14 @@ export default function Contact() {
                                 <Mail className="w-4 h-4 text-primary mt-1" />
                                 <div>
                                     <span className="block text-[10px] text-gray-500 font-bold uppercase tracking-widest">Email</span>
-                                    <span className="text-sm font-bold">saranr.msc@gmail.com</span>
+                                    <span className="text-sm font-bold">abc@gmai.com</span>
                                 </div>
                             </li>
                             <li className="flex gap-3 items-start">
                                 <Phone className="w-4 h-4 text-primary mt-1" />
                                 <div>
                                     <span className="block text-[10px] text-gray-500 font-bold uppercase tracking-widest">Call</span>
-                                    <span className="text-sm font-bold">+91 9739212560</span>
+                                    <span className="text-sm font-bold">+91 9952253000</span>
                                 </div>
                             </li>
                         </ul>
