@@ -16,26 +16,23 @@ const LinkedinIcon = () => (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
 );
 
+import { Logo } from './Logo';
+
 export default function Contact() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer id="contact" className="bg-bg-dark text-white pt-16 pb-8 overflow-hidden relative">
+        <footer id="contact" className="bg-slate-50 dark:bg-bg-dark text-slate-900 dark:text-white pt-16 pb-8 overflow-hidden relative transition-colors duration-300 border-t border-gray-100 dark:border-white/5">
             <div className="max-w-6xl mx-auto px-6 z-10 relative">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-10 md:mb-12">
                     <div className="col-span-1 lg:col-span-1">
-                        <div className="flex items-center gap-2 mb-6">
-                            <div className="bg-primary p-1.5 rounded-lg text-white">
-                                <BookOpen className="w-5 h-5" />
-                            </div>
-                            <span className="text-xl font-black tracking-tight">Vel's<span className="text-primary">Tech</span></span>
-                        </div>
-                        <p className="text-gray-400 mb-6 max-w-xs text-sm leading-relaxed">
+                        <Logo className="mb-6" />
+                        <p className="text-slate-600 dark:text-gray-400 mb-6 max-w-xs text-sm leading-relaxed">
                             Empowering the next generation of tech leaders through quality education and mentorship.
                         </p>
                         <div className="flex gap-3">
                             {[FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon].map((Icon, idx) => (
-                                <a key={idx} href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all">
+                                <a key={idx} href="#" className="w-8 h-8 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-slate-700 dark:text-white hover:text-white">
                                     <Icon />
                                 </a>
                             ))}
@@ -44,7 +41,7 @@ export default function Contact() {
 
                     <div>
                         <h4 className="text-base font-black mb-6 uppercase tracking-widest text-primary">Quick Links</h4>
-                        <ul className="space-y-3 text-gray-400 text-sm">
+                        <ul className="space-y-3 text-slate-600 dark:text-gray-400 text-sm font-medium">
                             <li><a href="#about" className="hover:text-primary transition-colors">About Us</a></li>
                             <li><a href="#courses" className="hover:text-primary transition-colors">Our Courses</a></li>
                             <li><a href="#why-us" className="hover:text-primary transition-colors">Why Choose Us</a></li>
@@ -54,7 +51,7 @@ export default function Contact() {
 
                     <div>
                         <h4 className="text-base font-black mb-6 uppercase tracking-widest text-primary">Legal</h4>
-                        <ul className="space-y-3 text-gray-400 text-sm">
+                        <ul className="space-y-3 text-slate-600 dark:text-gray-400 text-sm font-medium">
                             <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
@@ -67,27 +64,23 @@ export default function Contact() {
                             <li className="flex gap-3 items-start">
                                 <Mail className="w-4 h-4 text-primary mt-1" />
                                 <div>
-                                    <span className="block text-[10px] text-gray-500 font-bold uppercase tracking-widest">Email</span>
-                                    <span className="text-sm font-bold">abc@gmai.com</span>
+                                    <span className="block text-[10px] text-slate-500 dark:text-gray-500 font-bold uppercase tracking-widest">Email</span>
+                                    <span className="text-sm font-bold text-slate-800 dark:text-white">abc@gmai.com</span>
                                 </div>
                             </li>
                             <li className="flex gap-3 items-start">
                                 <Phone className="w-4 h-4 text-primary mt-1" />
                                 <div>
-                                    <span className="block text-[10px] text-gray-500 font-bold uppercase tracking-widest">Call</span>
-                                    <span className="text-sm font-bold">+91 9952253000</span>
+                                    <span className="block text-[10px] text-slate-500 dark:text-gray-500 font-bold uppercase tracking-widest">Call</span>
+                                    <span className="text-sm font-bold text-slate-800 dark:text-white">+91 9952253000</span>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-center md:text-left text-xs">
-                    <p>© {currentYear} Vel's Tech Learning Hub. All rights reserved.</p>
-                    <div className="flex gap-6 justify-center md:justify-end w-full md:w-auto">
-                        <span className="hover:text-white transition-colors cursor-pointer">Security</span>
-                        <span className="hover:text-white transition-colors cursor-pointer">Status</span>
-                    </div>
+                <div className="pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col items-center gap-4 text-slate-500 dark:text-gray-500 text-center text-xs font-medium">
+                    <p>© {currentYear} ByteTheBasics Learning Hub.</p>
                 </div>
             </div>
 

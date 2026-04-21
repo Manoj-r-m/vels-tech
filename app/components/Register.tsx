@@ -9,7 +9,7 @@ export default function Register() {
 
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="bg-white/80 dark:bg-card-dark/80 backdrop-blur-md p-6 sm:p-10 md:p-14 rounded-3xl shadow-xl relative border border-gray-100 dark:border-gray-800">
-                    <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+                    <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
                         <div>
                             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Join Our Community</span>
                             <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
@@ -35,10 +35,10 @@ export default function Register() {
                             </div>
                         </div>
 
-                        <div className="bg-[#0f172a] rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl border border-white/10 relative overflow-hidden group w-full">
+                        <div className="bg-white dark:bg-slate-950 rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl border border-gray-100 dark:border-white/10 relative overflow-hidden group w-full transition-colors duration-300">
                             <div className="mb-6 md:mb-8 relative z-10 text-center md:text-left">
-                                <h3 className="text-xl md:text-2xl font-black text-white mb-2">Student Enrollment</h3>
-                                <p className="text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">Limited spots available</p>
+                                <h3 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white mb-2">Student Enrollment</h3>
+                                <p className="text-slate-500 dark:text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">Limited spots available</p>
                             </div>
 
                             <form className="space-y-5 relative z-10">
@@ -51,7 +51,7 @@ export default function Register() {
                                         <input
                                             type="text"
                                             placeholder="Enter your full name"
-                                            className="w-full pl-12 pr-4 py-3.5 rounded-lg bg-slate-900 border border-slate-700/50 focus:border-primary focus:outline-none transition-all text-white placeholder:text-slate-600 font-bold text-sm"
+                                            className="w-full pl-12 pr-4 py-3.5 rounded-lg bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700/50 focus:border-primary focus:outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 font-bold text-sm"
                                         />
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@ export default function Register() {
                                         <input
                                             type="email"
                                             placeholder="Enter your email address"
-                                            className="w-full pl-12 pr-4 py-3.5 rounded-lg bg-slate-900 border border-slate-700/50 focus:border-primary focus:outline-none transition-all text-white placeholder:text-slate-600 font-bold text-sm"
+                                            className="w-full pl-12 pr-4 py-3.5 rounded-lg bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700/50 focus:border-primary focus:outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 font-bold text-sm"
                                         />
                                     </div>
                                 </div>
@@ -76,17 +76,17 @@ export default function Register() {
                                         <div className="absolute left-4 top-1/2 -translate-y-1/2 text-primary">
                                             <Rocket className="w-5 h-5" />
                                         </div>
-                                        <select defaultValue="" className="w-full pl-12 pr-4 py-3.5 rounded-lg bg-slate-900 border border-slate-700/50 focus:border-primary focus:outline-none transition-all text-white font-bold appearance-none cursor-pointer text-sm">
+                                        <select defaultValue="" className="w-full pl-12 pr-4 py-3.5 rounded-lg bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700/50 focus:border-primary focus:outline-none transition-all text-slate-900 dark:text-white font-bold appearance-none cursor-pointer text-sm">
                                             <option value="" disabled className="text-slate-500">Select a course</option>
-                                            <option value="azure" className="bg-slate-900">Azure Fundamentals</option>
-                                            <option value="web" className="bg-slate-900">Full Stack Web Dev</option>
-                                            <option value="data" className="bg-slate-900">Data Science & AI</option>
-                                            <option value="uiux" className="bg-slate-900">UI/UX Masterclass</option>
+                                            <option value="azure" className="bg-white dark:bg-slate-950">Azure Fundamentals</option>
+                                            <option value="web" className="bg-white dark:bg-slate-950">Full Stack Web Dev</option>
+                                            <option value="data" className="bg-white dark:bg-slate-950">Data Science & AI</option>
+                                            <option value="uiux" className="bg-white dark:bg-slate-950">UI/UX Masterclass</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <button className="w-full bg-primary hover:bg-white text-white hover:text-slate-900 font-black py-4 mt-4 rounded-lg flex items-center justify-center gap-3 transition-all shadow-lg shadow-primary/20 text-sm uppercase tracking-widest group/btn border border-transparent">
+                                <button className="w-full bg-primary hover:bg-primary-dark text-white font-black py-4 mt-4 rounded-lg flex items-center justify-center gap-3 transition-all shadow-lg shadow-primary/20 text-sm uppercase tracking-widest group/btn border border-transparent">
                                     Secure My Spot <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                                 </button>
                             </form>

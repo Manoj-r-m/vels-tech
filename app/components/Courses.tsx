@@ -86,7 +86,7 @@ export default function Courses() {
         </div>
 
         <div className="mt-12 md:mt-16 text-center w-full px-0 sm:px-4">
-          <a href="#register" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-primary/25 hover:shadow-xl transition-all text-xs sm:text-sm uppercase tracking-widest hover-lift">
+          <a href="#register" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-primary/25 hover:shadow-xl transition-all text-xs sm:text-sm uppercase tracking-widest hover-lift" suppressHydrationWarning>
             Enroll in this Masterclass <ArrowRight className="w-4 h-4 ml-1" />
           </a>
         </div>

@@ -13,9 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vel's Tech Learning Hub | Empower Your Future with Tech Education",
-  description: "Join Vel's Tech Learning Hub to master in-demand tech skills. Expert-led courses in Web Development, Data Science, UI/UX, and more with dedicated career placement.",
+  title: "ByteTheBasics Learning Hub | Master the Fundamentals of Tech",
+  description: "Join ByteTheBasics to master in-demand tech skills. Expert-led courses in Web Development, Data Science, UI/UX, and more with dedicated career placement.",
 };
+
+import { ThemeProvider } from "./components/theme-provider";
 
 export default function RootLayout({
   children,
@@ -26,8 +28,18 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
